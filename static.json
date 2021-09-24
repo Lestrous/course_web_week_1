@@ -1,7 +1,6 @@
 {
   "headers": {
     "/*": {
-      "X-Author": "day108",
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "text/plain; charset=UTF-8"
     }

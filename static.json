@@ -1,14 +1,14 @@
 {
   "headers": {
-    "/*": {
+    "**/*": {
       "X-Author": "day108",
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "text/plain; charset=UTF-8"
     },
-    "/*/*": {
+    "/fetch/*": {
       "X-Author": "day108",
       "Access-Control-Allow-Origin": "*",
-      "Content-Type": "text/plain; charset=UTF-8"
+      "Content-Type": "text/html; charset=UTF-8"
     }
   }
 }

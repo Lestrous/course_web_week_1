@@ -15,11 +15,11 @@
         const input = document.getElementById('inp');
         const button = document.getElementById('bt');
 
-        const inputValue = input.value;
-
-        console.log(inputValue);
-
         button.addEventListener('click', async () => {
+            const inputValue = input.value;
+
+            console.log(inputValue);
+
             let response = await fetch(inputValue);
 
             console.log(response);

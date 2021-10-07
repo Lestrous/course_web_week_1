@@ -17,11 +17,20 @@
 
         const inputValue = input.value;
 
+        console.log(inputValue);
+
         button.addEventListener('click', async () => {
-            const response = await fetch(inputValue);
+            let response = await fetch(inputValue);
+
+            console.log(response);
 
             if (response.ok) {
-                input.value = await response.text();
+                const finalText = await response.text();
+
+                input.value = finalText;
+
+                console.log(finalText);
+                console.log(input.value);
             } else {
                 console.log("Ошибка HTTP: " + response.status);
             }

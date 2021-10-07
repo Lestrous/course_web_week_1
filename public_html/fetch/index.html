@@ -16,21 +16,10 @@
         const button = document.getElementById('bt');
 
         button.addEventListener('click', async () => {
-            const inputValue = input.value;
-
-            console.log(inputValue);
-
-            let response = await fetch(inputValue);
-
-            console.log(response);
+            let response = await fetch(input.value);
 
             if (response.ok) {
-                const finalText = await response.text();
-
-                input.value = finalText;
-
-                console.log(finalText);
-                console.log(input.value);
+                input.value = await response.text();
             } else {
                 console.log("Ошибка HTTP: " + response.status);
             }

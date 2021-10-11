@@ -1,0 +1,20 @@
+{
+  "name": "course_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public_html/index.html",
+  "type": "module",
+  "scripts": {
+    "nodemon/result4": "nodemon public_html/result4/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lestrous/course_web_week_1.git"
+  },
+  "author": "Shtol Leonid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lestrous/course_web_week_1/issues"
+  },
+  "homepage": "https://github.com/Lestrous/course_web_week_1#readme"
+}

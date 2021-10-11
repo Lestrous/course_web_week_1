@@ -9,6 +9,12 @@
       "X-Author": "day108",
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "text/html; charset=UTF-8"
+    },
+    "/index.js/*": {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET,POST,DELETE,OPTIONS",
+      "Access-Control-Allow-Headers": "x-test,Content-Type,Accept,Access-Control-Allow-Headers",
+      "Content-Type": "application/json; charset=utf-8"
     }
   }
 }

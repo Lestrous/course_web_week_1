@@ -5,7 +5,7 @@
   "main": "public_html/index.html",
   "type": "module",
   "scripts": {
-    "nodemon/result4": "nodemon public_html/result4/index.js"
+    "nodemon/result4": "nodemon public_html/result4/"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,4 @@
+
 import { Server } from 'http';
 
 const CORS = {
@@ -14,9 +15,10 @@ Server((req, res) => {
     });
 
     req.on('end', () => {
-        res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8', ...CORS });
+        res.writeHead(200, { 'Content-Type': 'application/json; charset=UTF-8', ...CORS });
 
-        const str = JSON.stringify({"message": "day108", "x-result": req['headers']['x-test'], "x-body": requestBody});
+        const jsonRes = {"message": "day108", "x-result": req['headers']['x-test'], "x-body": requestBody};
+        const str = JSON.stringify(jsonRes);
 
         res.end( str );
     });

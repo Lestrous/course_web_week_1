@@ -19,6 +19,8 @@ Server((req, res) => {
         const jsonRes = {"message": "day108", "x-result": req['headers']['x-test'], "x-body": requestBody};
         const str = JSON.stringify(jsonRes);
 
+        console.log(str);
+
         res.end( str );
     });
 })

@@ -1,6 +1,6 @@
 import { Server } from 'http';
 
-Server((req, res) => {
+const s = Server((req, res) => {
     const CORS = {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET,POST,DELETE,OPTIONS',
@@ -23,5 +23,6 @@ Server((req, res) => {
 
         res.end( str );
     });
-})
-    .listen(4321);
+});
+
+s.listen();

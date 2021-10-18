@@ -21,5 +21,4 @@ Server((req, res) => {
 
         res.end( str );
     });
-})
-    .listen(4321);
+});

@@ -10,7 +10,7 @@
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "text/html; charset=UTF-8"
     },
-    "/result4/*.html": {
+    "/result4/*": {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET,POST,DELETE,OPTIONS",
       "Access-Control-Allow-Headers": "x-test,Content-Type,Accept,Access-Control-Allow-Headers",
